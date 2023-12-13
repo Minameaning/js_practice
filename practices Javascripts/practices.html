@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input placeholder="Your name" class="input" 
+    onkeydown="
+    if(event.key === 'Enter'){
+        inputName();
+    }
+        ">
+    <button onclick="
+    inputName();
+        " class="buttonA">submit</button>
+   <button  onclick="
+   onOff();" class = "toggle-button"> On </button>
+
+    <p class="result"></p>
+</body>
+<script>
+    function onOff(){
+     const onOffElement = document.querySelector('.toggle-button');
+     if (onOffElement.innerText ==='On'){
+        onOffElement.innerHTML ='Off';
+        onOffElement.classList.add('is-on');
+     } else{
+        onOffElement.innerHTML ='On';
+     }
+    }
+function inputName(){
+    const inputElement = document.querySelector('.input');
+    document.querySelector('.result').innerHTML =`Your name is : ${inputElement.value}`;
+}
+</script>
+</html>

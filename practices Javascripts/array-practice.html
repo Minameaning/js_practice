@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+// const nums = [10,20,30];
+// nums.push(99);
+// console.log(nums);
+
+// console.log(getLastValue([1,20,22,24,5]));
+
+// console.log(arraySway([1,20,22,24,5]));
+
+// const countDouble = [];
+// for (i=0;i<=11;i+=2){
+// console.log(i);
+// }
+
+// for(j=0;j<=5;j--){
+//     console.log(j);
+// }
+// const arrayCount = [1,2,3];
+// const result=[];
+// for(let h=0;h<=arrayCount.length;h++){
+
+// result.push(arrayCount[h]+1);
+
+// }
+
+
+// function addOne(array){
+//     const resultAddNumber =[];
+//     for(let m=0;m<array.length;m++){
+//         resultAddNumber.push(array[m]+1);
+//     }
+//     return resultAddNumber;
+
+// }
+// console.log(addOne([1,2,3]));
+
+
+
+// function getLastValue(array){
+//     const value =array.length-1;
+
+// return array[value];
+// }
+
+// function arraySway(array){
+//     const swap =array.length-1;
+//     const lastValue =array[swap];
+//     const firstValue =array[0];
+//     array[0] =lastValue;
+//     array[swap] =firstValue;
+//     return array;
+// }
+
+// function addNum(array,num){
+//     const resultNumbers = [];
+//     for(let p=0;p<array.length;p++){
+//         resultNumbers.push(array[p]+num);
+//         return resultNumbers;
+
+//     }
+// }
+// console.log(addNum([1,2,3],2));
+
+
+// function addArray(array1,array2){
+//     const resultTwoArray = [];
+//     for(let k=0;k<array1.length;k++){
+//         resultTwoArray.push(array1[k]+array2[k]);
+//         return resultTwoArray;
+
+//     }
+// }
+// console.log(addArray([1,2,3],[1,1,3]));
+
+
+// function countPositive(nums){
+//     let result =0;
+
+//     for(let a=0;a<nums.length;a++){
+//         if(num[a]>0){
+//             result++;
+//         }
+//     }
+// return result;
+// }
+// console.log(countPositive([1,-3,5]));
+
+
+// function minMax(nums){
+//     const result ={
+//         min:nums[0],
+//     max:nums[0]};
+
+//     for(let t=0;t<nums.length;t++){
+//         const value =nums[t];
+//         if(value<result.min){
+//             result.min =value;
+
+//         }
+//         if (value>result.max){
+//             result.max =value;
+//         }
+
+//     }
+//     return result;
+// }
+// console.log(minMax([1,-3,5]));
+
+
+// function removeEgg(foods){
+//     const result =[];
+//     const eggsRemoved =0;
+
+//     for(eggs=0;eggs<foods.length;eggs++){
+//         if(foods[eggs]=== 'egg' && eggsRemoved<2){
+//             eggsRemoved++;
+//             continue;
+//         }
+// result.push(foods[eggs]);
+//     }
+//     return result;
+// }
+// console.log(removeEgg(['egg','apple','egg','egg','ham']));
+
+
+// function countWords(words){
+//     const result= {};
+//     for(word =0;word<words.length;word++){
+//         const wordy =words[word];
+//     if(!result[wordy]){
+//         result[wordy]=1;
+//     }else{
+//         result[wordy]++;
+//     }
+//     }
+//     return result;
+// }
+// console.log(countWords(['egg','apple','egg','egg','ham']));
+
+// let arrayString = ['hello', 'world', 'search', 'good'];
+// let index =-1;
+// for(let i=0;i<arrayString.length;i++){
+//  if (arrayString[i]==='search'){
+//     index =i;
+//  }
+// }
+// console.log(index);
+
+// function findindex(array,word){
+//     for(let i=0;i<array.length;i++){
+//         if(array[i]===word){
+//         return i;
+//         }
+//        }
+//           return -1;
+//         }
+// function unique(array){
+//     const wordArray=[];
+//     for(let i=0;i<array.length;i++){
+//         const word =array[i];
+//         if(findindex(wordArray,word)=== -1){
+//             wordArray.push(word);
+//         }
+//     }
+//     return wordArray;
+// }
+// console.log(findindex(['red','green','blue'],'blue'));
+// console.log(unique(['green', 'red', 'blue', 'red']));
+function dubleArray(nums){
+    const numsDuobled =[];
+
+    for(let i=0;i<nums.length;i++){
+        const num=nums[i];
+        if(num===0){
+            break;
+        }
+        numsDuobled.push(num*2);
+    }
+    return numsDuobled;
+}
+dubleArray([1,1,3]);
+    </script>
+</body>
+</html>
